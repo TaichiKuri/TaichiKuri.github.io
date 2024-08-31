@@ -45,6 +45,14 @@
             text-decoration: underline;
         }
 
+        /* GitHubアイコンのスタイル */
+        .github-icon {
+            width: 120px;
+            height: 120px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
         .content {
             padding: 20px;
         }
@@ -60,6 +68,15 @@
             font-size: 18px;
             line-height: 1.6;
         }
+
+        .link-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .link-section img {
+            margin-left: 40px;
+        }
     </style>
 </head>
 <body>
@@ -72,11 +89,39 @@
         <a href="main.html">ホーム</a>
         <a href="about.html">自己紹介</a>
         <a href="research.html">研究内容</a>
+        <!-- GitHubのリンクを追加 -->
+
     </nav>
 
     <div class="content">
         <h2>研究テーマ</h2>
         <p>研究内容のテキストがここに入ります。具体的なプロジェクトや研究テーマについて説明します。</p>
     </div>
+
+    <div class="content">
+        <h2>リンク</h2>
+        <p class="link-section">
+            <a href="https://github.com/TaichiKuri" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+            </a>
+        </p>
+    </div>
+    
+    <div class="content">
+        <h2>お問い合わせ</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">お名前:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">メールアドレス:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">メッセージ:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+            <input type="submit" value="送信">
+        </form>
+    </div>
+    
 </body>
 </html>

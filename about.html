@@ -145,8 +145,62 @@
         <!-- 旅行日記セクション -->
         <div class="travel-log">
             <h2>旅行日記</h2>
-            <p>ここに旅行日記を書きます。最近行った旅行や訪れた場所、感じたことなどを共有するセクションです。詳細な内容や旅行の写真もここに追加できます。</p>
+            <div class="travel-entry-box">
+                <h3 class="travel-heading">2024年8月10日 - 京都の夏を満喫</h3>
+                <div class="travel-content">
+                    <img src="neko.JPG" alt="京都旅行の写真">
+                    <div class="travel-text">
+                        <p>今年の夏は京都を訪れました。祇園祭で有名な四条通りを歩き、古都の風情を感じながら、歴史あるお寺や神社を巡りました。特に印象に残ったのは、清水寺から見渡す京都市内の眺めで、夕日に染まる街並みがとても美しかったです。</p>
+                        <p>夜には鴨川沿いで食事を楽しみ、川のせせらぎを聞きながら過ごす時間は、とてもリラックスできました。また、抹茶スイーツで有名な茶寮でひと休みし、風味豊かな抹茶パフェを堪能しました。</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <style>
+            .travel-log {
+                padding: 20px;
+            }
+
+            .travel-entry-box {
+                background-color: #e0f7fa; /* 薄水色の背景 */
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+
+            .travel-heading {
+                text-align: center;
+                font-size: 24px;
+                margin: 0;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #b0e0e6; /* 見出し下の線 */
+            }
+
+            .travel-content {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            .travel-content img {
+                width: 45%;
+                max-width: 300px; /* 写真の最大幅 */
+                margin-right: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .travel-text {
+                flex: 1;
+            }
+
+            .travel-text p {
+                margin-top: 10px;
+                line-height: 1.6;
+            }
+        </style>
     </div>
 </body>
 </html>
