@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栗栖道のホームページ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .links, .news {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        .links h2, .news h2 {
+            border-bottom: 2px solid #3498db; /* 薄水色に変更 */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #3498db; /* 薄水色に変更 */
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            color: #3498db; /* 薄水色に変更 */
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .news p {
+            margin: 0;
+        }
+
+        .news .date {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .news .tag {
+            background-color: #bdc3c7;
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>栗汰道のホームページ</h1>
+        <p>栗汰道個人のホームページです。主に研究内容・進捗状況を随時更新していきます。</p>
+    </header>
+
+    <nav>
+        <a href="main.html">ホーム</a>
+        <a href="about.html">自己紹介</a>
+        <a href="research.html">研究内容</a>
+    </nav>
+
+    <div class="content">
+        <div class="links">
+            <h2>LINKS</h2>
+            <ul>
+                <li><a href="https://www.osaka-u.ac.jp/ja">大阪大学</a></li>
+                <li><a href="https://www.es.osaka-u.ac.jp/ja/">大阪大学 基礎工学研究科</a></li>
+                <li><a href="https://www.roboticmanipulation.org/">大阪大学 基礎工学研究科 栗栖研究室</a></li>
+            </ul>
+        </div>
+
+        <div class="news">
+            <h2>News</h2>
+            <p class="date">2023/5/8 <span class="tag">その他</span> ホームページ開設</p>
+            <p>その他</p>
+        </div>
+    </div>
+</body>
+</html>
